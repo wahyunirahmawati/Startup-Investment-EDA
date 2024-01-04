@@ -1,0 +1,47 @@
+Conceptual Problems
+
+1. Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui !
+
+NoSQL ( Not Only SQL ) merupakan database yang sifatnya non tabular. Format datanya berupa jason. 
+
+NoSQL memiliki kelebihan dalam hal kecepatan dan fleksibilitas.
+Fleksibel(Schema Flexible) misalnya setiap data tidak harus memiliki kolom yang sama.
+Memiliki kelebihan pada horisontal scale up, sehingga kita dapat menambah physical tools dengan mudah tanpa harus ada downtime.
+Fast Querys selain sederhana query NoSQL juga mudah digunakan.
+
+
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System !
+
+- Developer phase cukup cepat/ fast paced agile development. Contohnya di startup seringkali ada model bisnis yang berubah-ubah. Sehingga schema DB dibutuhkan yang fleksibel.
+- Saat membutuhkan DB yang dapat menyimpan data struktur dan semi struktur sekaligus.
+- Diperlukan saat kita memiliki data yang besar.
+- Diperlukan dalam microservices dan streaming data
+- Ketika dibutuhkan arsitektur yang dapat digunakan dalam kondisi unpredictable sehingga perlu scale out.
+
+
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut !
+
+- MongoDB untuk pengolahan Document
+- Redis untuk data temporary misalkan validasi data
+- Cassandra untuk agregasi ( memanipulasi data dengan cepat)
+- Graph DB seperti Neo4J dengan cyber query language.
+
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri !
+
+Airflow merupakan suatu platform yang digunakan untuk developing, scheduling, monitoring dengan type pemrosesan berupa batch. Airflow merupakan tools data engineering yang mendukung untuk pemrosesan data dengan jumlah yang besar dalam sekali waktu.
+
+Workflow dari Airflow yaitu dengan automatisasi machine untuk melakukan serangkaian task yang sudah dijadwalkan/scheduling.
+
+Airflow cocok untuk kebutuhan task dengan data yang berubah-ubah atau experiment dengan beberapa scenario.
+
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri !
+
+Great Expectations merupakan library untuk memvalidasi data yang kita miliki setelah melakukan proses feature engineering/ cleaning data. Dengan beberapa uji yang dilakukan seperti check missing value, melihat kesesuaian type data, memastikan tidak ada data duplikat, dll. Kemudian hasil pengujian didokumentasikan supaya memudahkan pengguna dari data yang sudah kita proses tahu jika kualitas data sudah baik,bersih, dan memenuhi ekspektasi.
+
+6. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri (Definisi, Contoh Kasus Penggunaan, Tools, dll) !
+
+Batch Processing merupakan merupakan salah satu type pemrosesan dengan sejumlah data yang besar dan diproses dalam sekali waktu.
+Selain mempersingkat waktu/lebih cepat bath processing tentu dapat mengoptimalkan hasil kinerja.
+Contoh tools Batch Processing seperti di DAG Airflow atau bisa juga menggunakan pySpark.
+Contoh case dalam pemanfaatan batch processing yaitu untuk proses ETL misalkan kita harus memproses banyak data misal 1juta data, selain itu untuk proses modeling dengan kebutuhan percobaan beberapa scenario, Dan menghindari downtime pada server diperlukan batch processing sehingga misalkan satu node mati tidak akan kehhilangan data atau customer juga tidak dirugikan.
+selain
